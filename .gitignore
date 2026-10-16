@@ -1,0 +1,45 @@
+# Prerequisites
+*.egg
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go (Backend) binaries and caches
+/go-server
+/main
+*.out
+*.test
+vendor/
+.golangci-lint.yml
+
+# Environment and sensitive configurations
+/**/.env
+/**/.env.*
+!.env.example
+config/config.json
+config/secrets.*
+
+# Node / Vite / SolidJS (Frontend in ./ui)
+**/node_modules/
+**/dist/
+**/.cache/
+**/.vite/
+.pnpm-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Icon?
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
